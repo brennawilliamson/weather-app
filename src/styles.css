@@ -113,3 +113,11 @@ form {
   color: #42639c;
   text-align: center;
 }
+
+.link {
+  text-align: center;
+  color: #42639c;
+  font-family: "Yantramanav", sans-serif;
+  margin: 0 auto;
+  display: block;
+}
