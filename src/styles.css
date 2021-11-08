@@ -1,0 +1,115 @@
+h1,
+h2,
+h4,
+p {
+  color: rgb(69, 109, 238);
+  text-align: center;
+  font-family: "Yantramanav", sans-serif;
+}
+
+h1 {
+  font-size: 18px;
+  margin-top: 50px;
+  padding: 10px;
+  border-bottom: 1px solid #93b0d2;
+  border-top: 1px solid #93b0d2;
+  font-weight: 800;
+  color: #42639c;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 40px;
+  color: hsl(218, 39%, 43%);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-family: "Yantramanav", sans-serif;
+  text-align: center;
+}
+h4 {
+  font-size: 45px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  color: rgb(158, 179, 250);
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+  text-align: right;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.container {
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  padding-bottom: 40px;
+  border: 2px solid #718db9;
+  border-radius: 5px;
+  max-width: 620px;
+}
+.search {
+  font-family: "Yantramanav", sans-serif;
+  color: white;
+  background-color: rgb(69, 109, 238);
+  border: 1px solid #42639c;
+  border-radius: 5px;
+  padding: 2px 7px;
+  transition: 200ms ease-in-out;
+}
+
+.current-location-button {
+  font-family: "Yantramanav", sans-serif;
+  color: white;
+  background-color: rgb(69, 109, 238);
+  border: 1px solid #42639c;
+  border-radius: 5px;
+  padding: 2px 7px;
+  transition: 200ms ease-in-out;
+}
+
+.temperature {
+  display: block;
+  margin: 0 auto;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(69, 109, 238);
+  font-family: "Yantramanav", sans-serif;
+}
+.unitC,
+.unitF {
+  display: inline;
+
+  position: relative;
+  top: -20px;
+  left: 2px;
+  font-size: 16px;
+  font-family: "Yantramanav", sans-serif;
+}
+
+.col {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 18px;
+  color: rgb(175, 191, 245);
+}
+
+.days {
+  color: #42639c;
+  text-align: center;
+}
+
+.emojis {
+  font-size: 40px;
+  text-align: center;
+}
+
+.temp {
+  color: #42639c;
+  text-align: center;
+}
