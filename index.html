@@ -4,9 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/5413b8c564.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <h1>Hello Git</h1>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="text"
+          class="city"
+          placeholder="City"
+          id="search-text-input"
+          autocomplete="off"
+          autofocus="on"
+        />
+        <input type="submit" class="search" value="Search" />
+        <button class="current-location-button">Current Location</button>
+      </form>
+
+      <h1><b> </b></h1>
+      <h2></h2>
+      <h3><span class="city-name"></span></h3>
+      <h4><i class="fas fa-cloud-sun"></i></h4>
+      <span class="temperature"
+        ><span id="temperatureMain"></span>
+
+        <span id="celsius"
+          ><a href="#" class="unitC" id="celsius">°C |</a></span
+        >
+        <span id="fahrenheit"
+          ><a href="#" class="unitF" id="fahrenheit">°F</a></span
+        >
+      </span>
+
+      <br />
+      <br />
+      <div class="border">
+        <div class="row align-items-start">
+          <div class="col days">FRIDAY</div>
+          <div class="col days">SATURDAY</div>
+          <div class="col days">SUNDAY</div>
+          <div class="col days">MONDAY</div>
+          <div class="col days">TUESDAY</div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col emojis"><i class="fas fa-cloud-sun"></i></div>
+        <div class="col emojis"><i class="fas fa-cloud"></i></div>
+        <div class="col emojis"><i class="fas fa-cloud-rain"></i></div>
+        <div class="col emojis"><i class="fas fa-sun"></i></div>
+        <div class="col emojis"><i class="fas fa-cloud-sun"></i></div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col temp"><b>79°</b> | 61°</div>
+        <div class="col temp"><b>70°</b>| 63°</div>
+        <div class="col temp"><b>70°</b> | 63°</div>
+        <div class="col temp"><b>75°</b> | 64°</div>
+        <div class="col temp"><b>75°</b> | 64°</div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
